@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .custom-table {
+            margin-bottom: 2rem;
+        }
+        .custom-image {
+            width: 150px;
+            height: auto;
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/htmlDemo">HTML Demo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="mt-4">HTML Demo</h1>
+
+        <h2>Tables</h2>
+        <table class="table custom-table">
+            <caption>Table 1: Sample Data</caption>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1 Col 1</td>
+                    <td>Row 1 Col 2</td>
+                    <td>Row 1 Col 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2 Col 1</td>
+                    <td colspan="2">Row 2 Col 2-3</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Row 3-4 Col 1</td>
+                    <td>Row 3 Col 2</td>
+                    <td>Row 3 Col 3</td>
+                </tr>
+                <tr>
+                    <td>Row 4 Col 2</td>
+                    <td>Row 4 Col 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer 1</td>
+                    <td>Footer 2</td>
+                    <td>Footer 3</td>
+                </tr>
+            </tfoot>
+        </table>
+        <table class="table custom-table">
+            <caption>Table 2: More Sample Data</caption>
+            <thead>
+                <tr>
+                    <th>Header A</th>
+                    <th>Header B</th>
+                    <th>Header C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row A1</td>
+                    <td>Row A2</td>
+                    <td>Row A3</td>
+                </tr>
+                <tr>
+                    <td>Row B1</td>
+                    <td>Row B2</td>
+                    <td>Row B3</td>
+                </tr>
+                <tr>
+                    <td>Row C1</td>
+                    <td>Row C2</td>
+                    <td>Row C3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer A</td>
+                    <td>Footer B</td>
+                    <td>Footer C</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>This section contains two tables demonstrating various HTML table elements such as headers, footers, and spanning.</p>
+
+        <h2>Lists</h2>
+        <ul>
+            <li>Item 1
+                <ul>
+                    <li>Subitem 1.1</li>
+                    <li>Subitem 1.2</li>
+                    <li>Subitem 1.3</li>
+                </ul>
+            </li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <p>This section contains an unordered list with a nested ordered list.</p>
+
+        <h2>Images</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="custom-image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo" class="custom-image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" class="custom-image">
+        <p>This section contains images.</p>
+
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>This section contains an HTML5 audio player.</p>
+
+        <h2>Video</h2>
+        <video controls width="600">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>This section contains an HTML5 video player.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

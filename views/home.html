@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/htmlDemo">HTML Demo</a>
+                </li>
+            </ul>
+        </div>
+        <span class="navbar-text">
+            Student Name
+        </span>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Welcome to my website</h1>
+        <p>I will be demonstrating HTML5 principles and techniques, Routing in Express, and more.</p>
+
+        <h2>About this site</h2>
+        <p>This site consists of 3 static views (Home, About, HTML Demo) as well as 5 routes that supply data, including: 
+            <br><a href="/students">All Students</a>, 
+            <br><a href="/students?course=3">Students by Course</a>, 
+            <br><a href="/student/2">A Single Student By Student Number</a>, 
+            <br><a href="/tas">All Managers</a>, and 
+            <br><a href="/courses">All Courses</a>.
+        </p>
+
+        <h2>HTML5 Introduction</h2>
+        <p>This site utilizes HTML5: a markup language used for structuring and presenting content on the World Wide Web.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
